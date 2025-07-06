@@ -8,6 +8,7 @@ import logging
 from dotenv import load_dotenv
 import asyncio
 import os 
+import webserver
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -111,5 +112,5 @@ async def rec(interaction: discord.Interaction,
     else:
         await interaction.response.send_message("Invalid type selected. Please choose from manhwa, manga, manhua, or novel.", ephemeral=True)
         
-
+webserver.keepalive()
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
