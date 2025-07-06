@@ -49,10 +49,10 @@ async def on_ready():
 ])
 async def rec(interaction: discord.Interaction, 
                 title: str, alt_title: str, genre: str, type: app_commands.Choice[str], plot: str, link: str):
-    manhwa_channel = bot.get_channel(1381387295655202897)
-    manga_channel = bot.get_channel(1381387295655202897)
-    manhua_channel = bot.get_channel(1381387295655202897)
-    novel_channel = bot.get_channel(1381387295655202897)
+    manhwa_channel = bot.get_channel(1383718477876953149)
+    manga_channel = bot.get_channel(1383723338081505310)
+    manhua_channel = bot.get_channel(1383720474252541972)
+    novel_channel = bot.get_channel(1383749889673924629)
     if type.value == 'manhwa':
         channel = manhwa_channel
         await interaction.response.send_message(f"recommendation has been sent to {manhwa_channel.mention}", ephemeral=True) 
