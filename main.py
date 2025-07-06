@@ -112,5 +112,5 @@ async def rec(interaction: discord.Interaction,
     else:
         await interaction.response.send_message("Invalid type selected. Please choose from manhwa, manga, manhua, or novel.", ephemeral=True)
         
-webserver.keepalive()
+webserver.keep_alive()
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
